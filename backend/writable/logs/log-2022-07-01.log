@@ -1,0 +1,13 @@
+ERROR - 2022-07-01 03:28:44 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-07-01 03:28:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\laragon\www\flagbak\backend\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\flagbak\backend\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT `api_val...', Array, false)
+#2 C:\laragon\www\flagbak\backend\system\Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\laragon\www\flagbak\backend\system\BaseModel.php(644): CodeIgniter\Model->doFirst()
+#4 C:\laragon\www\flagbak\backend\app\Controllers\Api\Configuration.php(38): CodeIgniter\BaseModel->first()
+#5 C:\laragon\www\flagbak\backend\system\CodeIgniter.php(928): App\Controllers\Api\Configuration->initial()
+#6 C:\laragon\www\flagbak\backend\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Configuration))
+#7 C:\laragon\www\flagbak\backend\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\flagbak\backend\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
